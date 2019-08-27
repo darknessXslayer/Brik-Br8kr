@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
 
     public float ballInitialVelocity = 600f;
+    public Vector3 force = new Vector3();
 
     private Rigidbody rb;
     private bool ballInPlay;
@@ -15,7 +16,7 @@ public class Ball : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         if (Input.GetButtonDown("Jump") && ballInPlay == false)
@@ -23,7 +24,9 @@ public class Ball : MonoBehaviour
             transform.parent = null;
             ballInPlay = true;
             rb.isKinematic = false;
-            rb.AddForce(new Vector3(ballInitialVelocity, ballInitialVelocity, 0));
+            transform.eulerAngles = new Vector3(0, 0, Random.Range(-70, 70));
+            force = transform.up;
+            rb.AddForce(force * ballInitialVelocity);
         }
     }
 }
