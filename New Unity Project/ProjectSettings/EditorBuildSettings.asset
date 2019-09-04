@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Brik_Br8kr.unity
+    path: Assets/Scenes/MenuScreen.unity
+    guid: 09c89e7ce6f37234b91aadce07a8a881
+  - enabled: 1
+    path: Assets/Scenes/Brik_Br8kr.unity
     guid: 0e4d4cea4d0ec034392b77713ea3fcb2
   m_configObjects: {}

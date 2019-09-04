@@ -58,7 +58,7 @@ public class GM : MonoBehaviour
     void Reset()
     {
         Time.timeScale = 1f;
-        Application.LoadLevel(Application.loadedLevel);
+        Application.LoadLevel(0);
     }
 
 
