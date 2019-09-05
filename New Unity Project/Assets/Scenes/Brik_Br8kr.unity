@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 200523072}
   - component: {fileID: 200523071}
   - component: {fileID: 200523074}
+  - component: {fileID: 200523075}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -401,6 +402,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &200523075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200523070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac72e63f0d956f3488a718b43856cd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &222401680
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +506,7 @@ GameObject:
   - component: {fileID: 542879053}
   - component: {fileID: 542879052}
   - component: {fileID: 542879056}
+  - component: {fileID: 542879057}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -584,6 +598,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90031f5fc618b7745982fdc5660c3e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wow: {fileID: 8300000, guid: 6e19ffe7871cf274f979a5c0563d6261, type: 3}
+--- !u!82 &542879057
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542879051}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6e19ffe7871cf274f979a5c0563d6261, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &817585954
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +707,7 @@ GameObject:
   - component: {fileID: 817585957}
   - component: {fileID: 817585956}
   - component: {fileID: 817585955}
+  - component: {fileID: 817585959}
   m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
@@ -675,6 +787,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &817585959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817585954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c527b020373554cb5d0c2bda6d7015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 200523075}
 --- !u!1 &995758983
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +891,7 @@ GameObject:
   - component: {fileID: 1078306658}
   - component: {fileID: 1078306657}
   - component: {fileID: 1078306656}
+  - component: {fileID: 1078306660}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Untagged
@@ -845,6 +971,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2}
+--- !u!114 &1078306660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078306655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c527b020373554cb5d0c2bda6d7015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 200523075}
 --- !u!1 &1106266649
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1105,7 @@ MonoBehaviour:
   paddle: {fileID: 7530572594983626355, guid: 1df567d427ee14c4c961a448440b517b, type: 3}
   deathParticles: {fileID: 5820074702851171107, guid: 16be3a761d3b663488abc5a666b3d666,
     type: 3}
+  cameraShake: {fileID: 200523075}
 --- !u!4 &1325558243
 Transform:
   m_ObjectHideFlags: 0
@@ -992,6 +1132,7 @@ GameObject:
   - component: {fileID: 1355388189}
   - component: {fileID: 1355388188}
   - component: {fileID: 1355388187}
+  - component: {fileID: 1355388191}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Untagged
@@ -1071,6 +1212,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2}
+--- !u!114 &1355388191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355388186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c527b020373554cb5d0c2bda6d7015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 200523075}
 --- !u!1 &1759864467
 GameObject:
   m_ObjectHideFlags: 0

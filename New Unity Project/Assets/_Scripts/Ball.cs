@@ -42,6 +42,7 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.tag == "ball")
         {
+
             //access the things we are going to change later on
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             GameObject ball = collision.gameObject;
